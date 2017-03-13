@@ -1,14 +1,14 @@
-Programme der Masterarbeit von Andreas Gocht
-"Die zylindrische Multipolentwicklung und ihre Anwendung bei der
-Magnetokardiographie"
-"The cylindrical multipol expansion and its application to
-magnetocardiography"
+# Programme der Masterarbeit von Andreas Gocht
+# "Die zylindrische Multipolentwicklung und ihre Anwendung bei der Magnetokardiographie"
+# "The cylindrical multipol expansion and its application to magnetocardiography"
 
-!!----------Struktur
+## Struktur
 
+```
 ./
 ->fourier
 ->lib
+```
 
 Im Ordner Lib sind Funktionen die regelmäßig verwendent werden, und quasi basisfunktionen darstellen.
 
@@ -28,31 +28,34 @@ Die SensorPos programme erzeugen verschiedene Sensorarrays.
 
 Die MUSIC Programme implemetieren verschiedene verfahren nach Mosher zur Quellokalisation, z.T. analog zu kapitel 3.3 der Masterarbeit.
 
-!!--------- Erzeugung der Mutlipolentwicklung und rekonstruktion des Feldes
+## Erzeugung der Mutlipolentwicklung und rekonstruktion des Feldes
 
 Um eine Entwicklung durchzuführen, mittels der Fourierbasierten Methode mit interpolation mit nu_max = 10 und kappa_max = 40 und ermittlung derne Fehler:
 
-  SensorPosZyl
-  gen_B
-  [A_i_R_Zyl,A_a_R_Zyl] = genAmplitunden(P_R,P_Phi,P_Z,B_R_Zyl,10,40,l,1,r_1,r_2);
-  Abschirmung_B_all
-  fehler
+```
+SensorPosZyl
+gen_B
+[A_i_R_Zyl,A_a_R_Zyl] = genAmplitunden(P_R,P_Phi,P_Z,B_R_Zyl,10,40,l,1,r_1,r_2);
+Abschirmung_B_all
+fehler
+```
 
 fehler wird eine fehlermeldung werfen, dan nur die Radialkomponente implementiert ist.  
   
 Für eine Kugel nach Taulu et. al. mit n_max = 10
 
-  SensorPosKugel2
-  gen_B
-  AbschirmungKugel
-  test
-  fehler
-  
+```
+SensorPosKugel2
+gen_B
+AbschirmungKugel
+test
+fehler
+```
 
-!!-------- Troublescouting ---------!!
+## Troubleshooting
 
 Wenn die Programme nicht mehr laufen sollten, sollten entweder die Funktionen aus lib in den Programm oderner Kopiert werden, oder bei Matlab der Path zu lib hinzugefügt werden (File-> SetPath -> Add Folder)
 
-!!-------- Kontakt
+## Kontakt
 
 andreas.gocht@gmail.com
