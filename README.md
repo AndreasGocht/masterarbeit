@@ -1,6 +1,11 @@
-# Programme der Masterarbeit von Andreas Gocht
-# "Die zylindrische Multipolentwicklung und ihre Anwendung bei der Magnetokardiographie"
-# "The cylindrical multipol expansion and its application to magnetocardiography"
+# Die zylindrische Multipolentwicklung und ihre Anwendung bei der Magnetokardiographie
+English title: "The cylindrical multipol expansion and its application to magnetocardiography"
+
+Code zur Masterarbeit.
+
+Die Arbeit ist auf ResearchGate zu finden:
+
+[DOI: 10.13140/RG.2.2.24448.43520](https://www.researchgate.net/publication/314880996_Die_zylindrische_Multipolentwicklung_und_ihre_Anwendung_bei_der_Magnetokardiographie)
 
 ## Struktur
 
